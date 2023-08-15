@@ -1,0 +1,10 @@
+Choses pouvant etre rajoutées plus tard avec du JS par exempl
+
+	- pour le résumé des perso appuyer sur un bouton ou sur 3petits pts pour afficher le texte complet (et donc cacher une partie du texte en mettant la meme hauteur pour chaque texte et en cachant une partie du texte)
+
+
+	- GITHUB
+
+	- qd je clique sur les differrents onglets (personnage, cinema, contact), la page defile jusqu'au lien avec une transition smooth vers le bas
+
+	- s'occuper du responsive

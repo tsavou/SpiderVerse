@@ -1,0 +1,350 @@
+@font-face {
+    font-family:'Bebas';
+    src: url(fonts/BEBAS___-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* HEADER NAVBAR */
+
+header{
+    background-color: #ea222d;
+    color: aliceblue;
+    padding: 10px;
+    position:fixed;
+    top: 0;
+    right: 0; left: 0;
+    height: 60px;
+    z-index: 100;
+    font-family: 'Bebas', sans-serif;
+
+}
+#logo{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;    
+    -webkit-text-stroke: 0.8px #0f1419; 
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    
+}
+
+#logo img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+#verseTitle{
+    font-size: 0.7em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1.5em;    
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    border-top: 1.5px solid aliceblue;
+    border-bottom: 1.5px solid aliceblue;
+    padding: 1px 0; 
+}
+
+nav ul li a:hover {
+    border: none;
+       
+}
+
+/* MAIN CONTENT */
+
+main{
+    margin-top: 60px;
+    background-color: #0f1419;
+    
+}
+
+/* ABOUT */
+.about{
+    height: 800px;
+    padding-top: 60px;
+    background-image: url(img/aboutbg.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.about-content{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+}
+
+.about-content h1{
+    background-color:#eef7fac0;
+    color: #ea222d;
+    font-size: 3em;
+    padding: 0.1em;
+    border: #ea222d solid 2px;
+    border-radius: 10px;
+    font-family: 'Bebas', sans-serif;
+    word-spacing: 0.2em;
+}
+
+.about-content p{
+    display: inline-block;
+    background-color: #ea222cd8;
+    padding: 0.3em;
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: #0f1419 5px 10px 5px;
+    
+}
+
+/* PERSONNAGES */
+
+.personnages{
+    height: 800px;
+    padding-top: 60px;
+}
+
+
+h2{
+    text-align: center;
+    color: aliceblue;
+    text-decoration: underline #ea222d;
+    font-family: 'Bebas', sans-serif;
+    word-spacing: 0.2em;
+    
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+figure{
+    margin: 1em;
+}
+
+figure img{
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.personnages figcaption{
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: aliceblue;
+    border: #ea222d solid 2px;
+    border-radius: 10px;
+    padding: 0.8em;
+    margin-bottom: 0.5em ;
+    
+}
+
+ .personnages h3{
+    text-align: center;
+    margin-bottom: 1em;
+    color: aliceblue;
+}
+
+/* CINEMA */
+
+.cinema-container{
+    height: 800px;
+    padding-top: 60px;
+    background-image: url(img/cinemabg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.released{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    background-color: rgba(0, 0, 0, 0.305);
+    border-radius: 10px;
+    padding: 1em;
+    height: 400px;
+}
+
+.released figure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em;
+    width: 50%;
+    margin: 0 10px; 
+    text-align: center; 
+}
+
+.released figure iframe {
+    max-width: 100%;
+    height: 60%;
+       
+}
+
+.released h3 {
+    margin: 1em 0;
+    background-color: #ea222caf;
+    border: solid 1px #ffffff;
+    display: inline-block;
+    padding: 0.2em;
+    border-radius: 5px;   
+}
+
+.released figcaption{
+    text-align: justify;
+    color: aliceblue;
+    padding: 0.8em;
+    font-size: 0.8em;
+}
+
+.upcoming{
+    margin: 1em;
+   
+}
+.upcoming-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.movieTable{
+    width: 50%;
+    border: #ea222d solid 2px;
+   text-align: center;
+   border-collapse: collapse;
+   background-color: #0f1419;
+   color: aliceblue;  
+    
+}
+
+.movieTable th{
+    border-bottom: #ea222d solid 1px;
+    padding: 0.5em;
+    
+}
+
+.movieTable td{
+    padding: 0.5em;
+}
+
+/* CONTACT */
+
+.contact{
+    height: 680px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.form-container{
+    width: 50%;
+    padding: 5em;
+}
+
+.studios{
+    text-align: center;
+    width: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction:column;
+}
+
+.contact h2{
+    text-align: center;
+    margin-bottom:1em ;
+}
+
+form input, select, textarea{
+    margin-bottom: 1em;
+}
+form label{
+    margin-bottom: 0.4em;
+}
+
+button{
+    background-color:#0f1419 ;
+    color:#ea222d;
+    padding: 0.3em;
+    border-radius: 5px;
+    border:#ea222d solid 2px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #ea222d;
+    color: #0f1419;
+}
+
+.studios p{
+    font-size: 0.72em;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #ea222d;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-family: 'Bebas', sans-serif;
+    
+}
+
+.copyright{
+    margin-left: 1em;
+    font-size: 0.6em;
+}
+
+.socials{
+    display: flex; 
+    align-items: center;   
+}
+.socials img {
+    width: 20px; 
+    height: 20px;
+}
+
+.socials a {
+    margin: 0 10px; 
+}
+
+.socials a:hover{
+    transform: scale(1.5);
+}
+
+
+
