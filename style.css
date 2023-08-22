@@ -4,6 +4,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -171,6 +175,9 @@ figure img{
     color: aliceblue;
 }
 
+.details{
+    display: none;
+}
 /* CINEMA */
 
 .cinema-container{
